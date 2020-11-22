@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SeleniumEasySuite]">
+  <test name="SeleniumEasyTest(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.BasicFirstFormDemoUsingLaunchBrowsrStaticDataTest">
+        <methods>
+          <include name="verifyTwoInputFields"/>
+        </methods>
+      </class> <!-- testCases.BasicFirstFormDemoUsingLaunchBrowsrStaticDataTest -->
+    </classes>
+  </test> <!-- SeleniumEasyTest(failed) -->
+</suite> <!-- Failed suite [SeleniumEasySuite] -->
