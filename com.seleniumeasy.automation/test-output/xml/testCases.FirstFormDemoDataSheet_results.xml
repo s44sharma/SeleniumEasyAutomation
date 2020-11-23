@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="24.652">
+           time="21.937">
   <properties />
   
   
-            <testcase name="verifySingleInputField" time="24.652" classname="testCases.BasicFirstFormDemoClunkyTest" />
+            <testcase name="verifyTwoInputFieldsNew" time="21.937" classname="testCases.FirstFormDemoDataSheet" />
       
 </testsuite>

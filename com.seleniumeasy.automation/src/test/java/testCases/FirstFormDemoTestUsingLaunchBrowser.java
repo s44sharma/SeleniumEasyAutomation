@@ -5,10 +5,10 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import pageObjects.BasicFirstFormDemoPage;
+import pageObjects.FirstFormDemoPage;
 import utilties.CommonMethod;
 
-public class BasicFirstFormDemoTestUsingLaunchBrowser extends CommonMethod{
+public class FirstFormDemoTestUsingLaunchBrowser extends CommonMethod{
 	
 	@Test (groups="Regression")
 	
@@ -16,7 +16,7 @@ public class BasicFirstFormDemoTestUsingLaunchBrowser extends CommonMethod{
 		
 		
 	// This will call BasicFirstFormDemoPage Constructor and pass driver to BasicFirstFormDemoPage
-	BasicFirstFormDemoPage BFFDPage = new BasicFirstFormDemoPage(driver);
+	FirstFormDemoPage BFFDPage = new FirstFormDemoPage(driver);
 	
 	driver.get("https://www.seleniumeasy.com/test/basic-first-form-demo.html");
 	driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);

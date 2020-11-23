@@ -7,9 +7,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
-import pageObjects.BasicFirstFormDemoPage;
+import pageObjects.FirstFormDemoPage;
 
-public class BasicFirstFormDemoClunkyTest{
+public class FirstFormDemoClunkyTest{
 	
 	@Test (groups="Smoke")
 	
@@ -18,7 +18,7 @@ public class BasicFirstFormDemoClunkyTest{
 	WebDriver driver = new FirefoxDriver();
 	
 	// This will call BasicFirstFormDemoPage Constructor and pass driver to BasicFirstFormDemoPage
-	BasicFirstFormDemoPage BFFDPage = new BasicFirstFormDemoPage(driver);
+	FirstFormDemoPage BFFDPage = new FirstFormDemoPage(driver);
 	
 	driver.get("https://www.seleniumeasy.com/test/basic-first-form-demo.html");
 	driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
@@ -40,7 +40,7 @@ public class BasicFirstFormDemoClunkyTest{
 	WebDriver driver = new FirefoxDriver();
 	
 	// This will call BasicFirstFormDemoPage Constructor and pass driver to BasicFirstFormDemoPage
-	BasicFirstFormDemoPage BFFDPage = new BasicFirstFormDemoPage(driver);
+	FirstFormDemoPage BFFDPage = new FirstFormDemoPage(driver);
 	
 	driver.get("https://www.seleniumeasy.com/test/basic-first-form-demo.html");
 	driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);

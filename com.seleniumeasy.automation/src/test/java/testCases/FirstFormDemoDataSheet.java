@@ -10,16 +10,16 @@ import org.testng.annotations.Test;
 import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
-import pageObjects.BasicFirstFormDemoPage;
+import pageObjects.FirstFormDemoPage;
 import utilties.CommonMethod;
 
-public class BasicFirstFormDemoDataSheet extends CommonMethod{
+public class FirstFormDemoDataSheet extends CommonMethod{
 	
 	@Test (groups="Regression")
 	
 	public void verifyTwoInputFieldsNew() throws BiffException, IOException, InterruptedException {	
 		
-	BasicFirstFormDemoPage BFFDPage = new BasicFirstFormDemoPage(driver);
+	FirstFormDemoPage BFFDPage = new FirstFormDemoPage(driver);
 	
 	driver.get("https://www.seleniumeasy.com/test/basic-first-form-demo.html");
 	driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);

@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [SeleniumEasySuite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
   <test name="SeleniumEasyTest(failed)">
     <parameter name="Browser" value="chrome"/>
     <groups>
       <run>
         <include name="Smoke"/>
+        <include name="Regression"/>
+        <include name="Functional"/>
       </run>
     </groups>
     <classes>
-      <class name="testCases.BasicFirstFormDemoUsingLaunchBrowsrStaticDataTest">
+      <class name="testCases.BasicFirstRadioButtonDemoSingleRadioButtonTest">
         <methods>
-          <include name="verifyTwoInputFields"/>
+          <include name="tearDown"/>
+          <include name="verifySingleRadioButton"/>
+          <include name="initiateBrowser"/>
         </methods>
-      </class> <!-- testCases.BasicFirstFormDemoUsingLaunchBrowsrStaticDataTest -->
+      </class> <!-- testCases.BasicFirstRadioButtonDemoSingleRadioButtonTest -->
     </classes>
   </test> <!-- SeleniumEasyTest(failed) -->
 </suite> <!-- Failed suite [SeleniumEasySuite] -->

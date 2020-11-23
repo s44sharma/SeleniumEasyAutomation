@@ -4,7 +4,7 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class BasicFirstFormDemoPage{
+public class FirstFormDemoPage{
 
 	
 	WebDriver driver;
@@ -18,7 +18,7 @@ public class BasicFirstFormDemoPage{
 
 	// Whenever the objects of this class are created, this constructor will get driver from outside and assign to this class.	
 
-	public BasicFirstFormDemoPage (WebDriver d){
+	public FirstFormDemoPage (WebDriver d){
 		driver = d;
 	}	
 	//Example Type 1 Part 2

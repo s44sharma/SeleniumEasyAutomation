@@ -17,12 +17,7 @@
 	<test name="SeleniumEasyTest">
 		<parameter name="Browser" value="chrome" />
 		<classes>
-			<class name="testCases.BasicFirstFormDemoUsingLaunchBrowsrStaticDataTest" />
-			<class name="testCases.BasicCheckBoxDemoSingleCheckBoxTest" />
-			<class name="testCases.BasicFirstFormDemoClunkyTest" />
-			<class name="testCases.BasicFirstFormDemoDataSheet" />
-			<class name="testCases.BasicFirstFormDemoTestUsingLaunchBrowser" />
-			<class name="testCases.BasicCheckBoxDemoSingleCheckBoxTest2" />
+			<class name="testCases.FirstRadioButtonDemoSingleRadioButtonTest" />
 		</classes>
 	</test> <!-- SeleniumEasyTest -->
 </suite> <!-- SeleniumEasySuite -->
