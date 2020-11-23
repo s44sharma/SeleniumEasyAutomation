@@ -3,8 +3,10 @@ package pageObjects;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
@@ -16,6 +18,10 @@ public class DropdownListPage {
 	}
 
 	By DayList = By.id("select-demo");
+	By PrintMeButton = By.id("printMe");
+	By PrintAllButton = By.id("printAll");
+	By FirstListItem = By.xpath("//*[@id='multi-select']/option[1]");
+	By FirstDisplayedMessage =  By.xpath("//*[@id='easycont']/div/div[2]/div[2]/div[2]/p[2]");
 
 	public void setDayList(){
 		WebElement dayofWeek = driver.findElement(DayList);
@@ -48,4 +54,38 @@ public class DropdownListPage {
 			System.out.println(daySofWeek.get(i).getText());
 		}
 	}
+	
+	public void selectMultipleListItems() throws InterruptedException{
+		
+		driver.findElement(FirstListItem).click();
+				
+		driver.findElement(PrintMeButton).click();
+		
+//		Thread.sleep(2000);	
+		
+		String expectedCityMessage = "First selected option is : California";
+		String displayedCityMessage = driver.findElement(FirstDisplayedMessage).getText();
+		System.out.println(displayedCityMessage);		
+		
+		Assert.assertEquals(displayedCityMessage, expectedCityMessage);
+		
+		Actions obj = new Actions(driver);
+		obj.keyDown(Keys.CONTROL)
+		
+		.click(driver.findElement(By.xpath("//*[@id='multi-select']/option[2]")))
+		.click(driver.findElement(By.xpath("//*[@id='multi-select']/option[3]")))
+		.keyUp(Keys.CONTROL).build().perform();
+				
+		driver.findElement(PrintAllButton).click();
+//		Thread.sleep(2000);	
+		
+		String expectedCityMessageAll = "Options selected are : California,Florida,New Jersey";
+		String displayedCityMessageAll = driver.findElement(FirstDisplayedMessage).getText();
+		System.out.println(displayedCityMessageAll);	
+
+		Assert.assertEquals(displayedCityMessageAll, expectedCityMessageAll);
+
+		}
+
+		
 }

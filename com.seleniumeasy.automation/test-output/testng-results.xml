@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="SeleniumEasySuite" duration-ms="12328" started-at="2020-11-23T12:21:53Z" finished-at="2020-11-23T12:22:06Z">
+  <suite name="SeleniumEasySuite" duration-ms="15999" started-at="2020-11-23T17:09:48Z" finished-at="2020-11-23T17:10:04Z">
     <groups>
       <group name="Functional">
-        <method signature="DropdownListPrintAllValuesTest.verifyDropdownListValues()[pri:0, instance:testCases.DropdownListPrintAllValuesTest@32709393]" name="verifyDropdownListValues" class="testCases.DropdownListPrintAllValuesTest"/>
+        <method signature="DropdownListSelectMultipleValuesTest.selectDropdownListValues()[pri:0, instance:testCases.DropdownListSelectMultipleValuesTest@32709393]" name="selectDropdownListValues" class="testCases.DropdownListSelectMultipleValuesTest"/>
       </group> <!-- Functional -->
     </groups>
-    <test name="SeleniumEasyTest" duration-ms="12328" started-at="2020-11-23T12:21:53Z" finished-at="2020-11-23T12:22:06Z">
-      <class name="testCases.DropdownListPrintAllValuesTest">
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testCases.DropdownListPrintAllValuesTest@32709393]" name="initiateBrowser" is-config="true" duration-ms="8039" started-at="2020-11-23T12:21:53Z" finished-at="2020-11-23T12:22:02Z">
+    <test name="SeleniumEasyTest" duration-ms="15999" started-at="2020-11-23T17:09:48Z" finished-at="2020-11-23T17:10:04Z">
+      <class name="testCases.DropdownListSelectMultipleValuesTest">
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testCases.DropdownListSelectMultipleValuesTest@32709393]" name="initiateBrowser" is-config="true" duration-ms="9675" started-at="2020-11-23T17:09:48Z" finished-at="2020-11-23T17:09:58Z">
           <params>
             <param index="0">
               <value>
@@ -21,22 +21,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateBrowser -->
-        <test-method status="PASS" signature="verifyDropdownListValues()[pri:0, instance:testCases.DropdownListPrintAllValuesTest@32709393]" name="verifyDropdownListValues" duration-ms="3309" started-at="2020-11-23T12:22:02Z" finished-at="2020-11-23T12:22:05Z">
+        <test-method status="PASS" signature="selectDropdownListValues()[pri:0, instance:testCases.DropdownListSelectMultipleValuesTest@32709393]" name="selectDropdownListValues" duration-ms="5389" started-at="2020-11-23T17:09:58Z" finished-at="2020-11-23T17:10:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDropdownListValues -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.DropdownListPrintAllValuesTest@32709393]" name="tearDown" is-config="true" duration-ms="928" started-at="2020-11-23T12:22:05Z" finished-at="2020-11-23T12:22:06Z">
+        </test-method> <!-- selectDropdownListValues -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.DropdownListSelectMultipleValuesTest@32709393]" name="tearDown" is-config="true" duration-ms="879" started-at="2020-11-23T17:10:03Z" finished-at="2020-11-23T17:10:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyDropdownListValues status=SUCCESS method=DropdownListPrintAllValuesTest.verifyDropdownListValues()[pri:0, instance:testCases.DropdownListPrintAllValuesTest@32709393] output={null}]]]>
+                <![CDATA[[TestResult name=selectDropdownListValues status=SUCCESS method=DropdownListSelectMultipleValuesTest.selectDropdownListValues()[pri:0, instance:testCases.DropdownListSelectMultipleValuesTest@32709393] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.DropdownListPrintAllValuesTest -->
+      </class> <!-- testCases.DropdownListSelectMultipleValuesTest -->
     </test> <!-- SeleniumEasyTest -->
   </suite> <!-- SeleniumEasySuite -->
 </testng-results>

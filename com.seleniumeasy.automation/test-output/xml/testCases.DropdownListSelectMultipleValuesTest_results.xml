@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SeleniumEasyTest"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="5.389">
+  <properties />
+  
+  
+            <testcase name="selectDropdownListValues" time="5.389" classname="testCases.DropdownListSelectMultipleValuesTest" />
+      
+</testsuite>

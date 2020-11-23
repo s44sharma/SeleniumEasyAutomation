@@ -15,13 +15,13 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.DropdownListTest">
+      <class name="testCases.DropdownListSelectMultipleValuesTest">
         <methods>
-          <include name="verifyDropdownList"/>
           <include name="tearDown"/>
+          <include name="selectDropdownListValues"/>
           <include name="initiateBrowser"/>
         </methods>
-      </class> <!-- testCases.DropdownListTest -->
+      </class> <!-- testCases.DropdownListSelectMultipleValuesTest -->
     </classes>
   </test> <!-- SeleniumEasyTest(failed) -->
 </suite> <!-- Failed suite [SeleniumEasySuite] -->
