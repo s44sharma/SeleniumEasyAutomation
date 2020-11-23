@@ -15,13 +15,13 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.BasicFirstRadioButtonDemoSingleRadioButtonTest">
+      <class name="testCases.DropdownListTest">
         <methods>
+          <include name="verifyDropdownList"/>
           <include name="tearDown"/>
-          <include name="verifySingleRadioButton"/>
           <include name="initiateBrowser"/>
         </methods>
-      </class> <!-- testCases.BasicFirstRadioButtonDemoSingleRadioButtonTest -->
+      </class> <!-- testCases.DropdownListTest -->
     </classes>
   </test> <!-- SeleniumEasyTest(failed) -->
 </suite> <!-- Failed suite [SeleniumEasySuite] -->
