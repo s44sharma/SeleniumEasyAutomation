@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="SeleniumEasySuite" duration-ms="15999" started-at="2020-11-23T17:09:48Z" finished-at="2020-11-23T17:10:04Z">
+  <suite name="SeleniumEasySuite" duration-ms="20884" started-at="2020-11-24T19:19:51Z" finished-at="2020-11-24T19:20:12Z">
     <groups>
       <group name="Functional">
-        <method signature="DropdownListSelectMultipleValuesTest.selectDropdownListValues()[pri:0, instance:testCases.DropdownListSelectMultipleValuesTest@32709393]" name="selectDropdownListValues" class="testCases.DropdownListSelectMultipleValuesTest"/>
+        <method signature="DragAndDropTest.verifyDragAndDrop()[pri:0, instance:testCases.DragAndDropTest@32709393]" name="verifyDragAndDrop" class="testCases.DragAndDropTest"/>
       </group> <!-- Functional -->
     </groups>
-    <test name="SeleniumEasyTest" duration-ms="15999" started-at="2020-11-23T17:09:48Z" finished-at="2020-11-23T17:10:04Z">
-      <class name="testCases.DropdownListSelectMultipleValuesTest">
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testCases.DropdownListSelectMultipleValuesTest@32709393]" name="initiateBrowser" is-config="true" duration-ms="9675" started-at="2020-11-23T17:09:48Z" finished-at="2020-11-23T17:09:58Z">
+    <test name="SeleniumEasyTest" duration-ms="20884" started-at="2020-11-24T19:19:51Z" finished-at="2020-11-24T19:20:12Z">
+      <class name="testCases.DragAndDropTest">
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testCases.DragAndDropTest@32709393]" name="initiateBrowser" is-config="true" duration-ms="7491" started-at="2020-11-24T19:19:51Z" finished-at="2020-11-24T19:19:58Z">
           <params>
             <param index="0">
               <value>
@@ -21,22 +21,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateBrowser -->
-        <test-method status="PASS" signature="selectDropdownListValues()[pri:0, instance:testCases.DropdownListSelectMultipleValuesTest@32709393]" name="selectDropdownListValues" duration-ms="5389" started-at="2020-11-23T17:09:58Z" finished-at="2020-11-23T17:10:03Z">
+        <test-method status="PASS" signature="verifyDragAndDrop()[pri:0, instance:testCases.DragAndDropTest@32709393]" name="verifyDragAndDrop" duration-ms="12209" started-at="2020-11-24T19:19:58Z" finished-at="2020-11-24T19:20:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectDropdownListValues -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.DropdownListSelectMultipleValuesTest@32709393]" name="tearDown" is-config="true" duration-ms="879" started-at="2020-11-23T17:10:03Z" finished-at="2020-11-23T17:10:04Z">
+        </test-method> <!-- verifyDragAndDrop -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.DragAndDropTest@32709393]" name="tearDown" is-config="true" duration-ms="1108" started-at="2020-11-24T19:20:11Z" finished-at="2020-11-24T19:20:12Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=selectDropdownListValues status=SUCCESS method=DropdownListSelectMultipleValuesTest.selectDropdownListValues()[pri:0, instance:testCases.DropdownListSelectMultipleValuesTest@32709393] output={null}]]]>
+                <![CDATA[[TestResult name=verifyDragAndDrop status=SUCCESS method=DragAndDropTest.verifyDragAndDrop()[pri:0, instance:testCases.DragAndDropTest@32709393] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.DropdownListSelectMultipleValuesTest -->
+      </class> <!-- testCases.DragAndDropTest -->
     </test> <!-- SeleniumEasyTest -->
   </suite> <!-- SeleniumEasySuite -->
 </testng-results>

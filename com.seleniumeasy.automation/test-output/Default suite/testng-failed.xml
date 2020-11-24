@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="pageObjects.BasicFirstFormDemoTest">
+      <class name="testCases.DragAndDropTest">
         <methods>
-          <include name="verifySingleInputField"/>
+          <include name="verifyDragAndDrop"/>
+          <include name="tearDown"/>
+          <include name="initiateBrowser"/>
         </methods>
-      </class> <!-- pageObjects.BasicFirstFormDemoTest -->
+      </class> <!-- testCases.DragAndDropTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

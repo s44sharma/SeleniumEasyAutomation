@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SeleniumEasyTest"
+<testsuite name="Test"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="3.482">
+           time="3.243">
   <properties />
   
   
-            <testcase name="verifySingleRadioButton" time="3.482" classname="testCases.FirstRadioButtonDemoSingleRadioButtonTest" />
+            <testcase name="verifySingleRadioButton" time="3.243" classname="testCases.FirstRadioButtonDemoSingleRadioButtonTest" />
       
 </testsuite>
