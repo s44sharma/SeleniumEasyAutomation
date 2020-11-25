@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test"
+<testsuite name="SeleniumEasyTest"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="27.245">
+           time="29.778">
   <properties />
   
   
-            <testcase name="verifySingleInputField" time="27.245" classname="testCases.FirstFormDemoClunkyTest" />
+            <testcase name="verifySingleInputField" time="29.778" classname="testCases.FirstFormDemoClunkyTest" />
       
 </testsuite>

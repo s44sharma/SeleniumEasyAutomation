@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [SeleniumEasySuite]">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [SeleniumEasySuite]" parallel="methods">
   <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test name="SeleniumEasyTest(failed)">
+  <test name="SeleniumEasyTest(failed)" parallel="methods">
     <parameter name="Browser" value="chrome"/>
     <groups>
       <run>
@@ -15,13 +15,18 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.DragAndDropTest">
+      <class name="testCases.FirstFormDemoUsingLaunchBrowsrStaticDataTest">
         <methods>
-          <include name="verifyDragAndDrop"/>
+          <include name="verifyTwoInputFields"/>
           <include name="tearDown"/>
           <include name="initiateBrowser"/>
         </methods>
-      </class> <!-- testCases.DragAndDropTest -->
+      </class> <!-- testCases.FirstFormDemoUsingLaunchBrowsrStaticDataTest -->
+      <class name="testCases.FirstFormDemoClunkyTest">
+        <methods>
+          <include name="verifySingleInputField"/>
+        </methods>
+      </class> <!-- testCases.FirstFormDemoClunkyTest -->
     </classes>
   </test> <!-- SeleniumEasyTest(failed) -->
 </suite> <!-- Failed suite [SeleniumEasySuite] -->

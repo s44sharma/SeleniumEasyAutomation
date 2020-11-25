@@ -25,7 +25,11 @@ public class FirstFormDemoUsingLaunchBrowsrStaticDataTest extends CommonMethod{
 	
 	Thread.sleep(1000);
 	
-	driver.findElement(By.id("at-cv-lightbox-close")).click();	
+	Boolean isPresent = driver.findElements(By.id("at-cv-lightbox-close")).size() > 0;
+
+	if(isPresent) {
+		driver.findElement(By.id("at-cv-lightbox-close")).click();
+	}
 	
 	BFFDPage.enterSecondNumber(secondNumber);
 	

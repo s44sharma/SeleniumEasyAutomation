@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="8" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="SeleniumEasySuite" duration-ms="20884" started-at="2020-11-24T19:19:51Z" finished-at="2020-11-24T19:20:12Z">
+  <suite name="SeleniumEasySuite" duration-ms="73154" started-at="2020-11-25T13:39:08Z" finished-at="2020-11-25T13:40:21Z">
     <groups>
       <group name="Functional">
-        <method signature="DragAndDropTest.verifyDragAndDrop()[pri:0, instance:testCases.DragAndDropTest@32709393]" name="verifyDragAndDrop" class="testCases.DragAndDropTest"/>
+        <method signature="CheckBoxDemoSingleCheckBoxTest.verifySingleDemoCheckbox()[pri:0, instance:testCases.CheckBoxDemoSingleCheckBoxTest@68bbe345]" name="verifySingleDemoCheckbox" class="testCases.CheckBoxDemoSingleCheckBoxTest"/>
+        <method signature="CheckBoxDemoSingleCheckBoxTest2.verifySingleDemoCheckbox()[pri:0, instance:testCases.CheckBoxDemoSingleCheckBoxTest2@7c29daf3]" name="verifySingleDemoCheckbox" class="testCases.CheckBoxDemoSingleCheckBoxTest2"/>
+        <method signature="FirstRadioButtonDemoSingleRadioButtonTest.verifySingleRadioButton()[pri:0, instance:testCases.FirstRadioButtonDemoSingleRadioButtonTest@9660f4e]" name="verifySingleRadioButton" class="testCases.FirstRadioButtonDemoSingleRadioButtonTest"/>
       </group> <!-- Functional -->
+      <group name="Regression">
+        <method signature="FirstFormDemoDataSheet.verifyTwoInputFieldsNew()[pri:0, instance:testCases.FirstFormDemoDataSheet@7494e528]" name="verifyTwoInputFieldsNew" class="testCases.FirstFormDemoDataSheet"/>
+        <method signature="FirstFormDemoTestUsingLaunchBrowser.verifySingleInputField()[pri:0, instance:testCases.FirstFormDemoTestUsingLaunchBrowser@4bbfb90a]" name="verifySingleInputField" class="testCases.FirstFormDemoTestUsingLaunchBrowser"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="FirstFormDemoClunkyTest.verifySingleInputField()[pri:0, instance:testCases.FirstFormDemoClunkyTest@30b8a058]" name="verifySingleInputField" class="testCases.FirstFormDemoClunkyTest"/>
+        <method signature="FirstFormDemoUsingLaunchBrowsrStaticDataTest.verifyTwoInputFields()[pri:0, instance:testCases.FirstFormDemoUsingLaunchBrowsrStaticDataTest@a7e666]" name="verifyTwoInputFields" class="testCases.FirstFormDemoUsingLaunchBrowsrStaticDataTest"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test name="SeleniumEasyTest" duration-ms="20884" started-at="2020-11-24T19:19:51Z" finished-at="2020-11-24T19:20:12Z">
-      <class name="testCases.DragAndDropTest">
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testCases.DragAndDropTest@32709393]" name="initiateBrowser" is-config="true" duration-ms="7491" started-at="2020-11-24T19:19:51Z" finished-at="2020-11-24T19:19:58Z">
+    <test name="SeleniumEasyTest" duration-ms="73154" started-at="2020-11-25T13:39:08Z" finished-at="2020-11-25T13:40:21Z">
+      <class name="testCases.CheckBoxDemoSingleCheckBoxTest2">
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testCases.CheckBoxDemoSingleCheckBoxTest2@7c29daf3]" name="initiateBrowser" is-config="true" duration-ms="13899" started-at="2020-11-25T13:39:38Z" finished-at="2020-11-25T13:39:51Z">
           <params>
             <param index="0">
               <value>
@@ -21,22 +31,168 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateBrowser -->
-        <test-method status="PASS" signature="verifyDragAndDrop()[pri:0, instance:testCases.DragAndDropTest@32709393]" name="verifyDragAndDrop" duration-ms="12209" started-at="2020-11-24T19:19:58Z" finished-at="2020-11-24T19:20:11Z">
+        <test-method status="PASS" signature="verifySingleDemoCheckbox()[pri:0, instance:testCases.CheckBoxDemoSingleCheckBoxTest2@7c29daf3]" name="verifySingleDemoCheckbox" duration-ms="3822" started-at="2020-11-25T13:39:51Z" finished-at="2020-11-25T13:39:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDragAndDrop -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.DragAndDropTest@32709393]" name="tearDown" is-config="true" duration-ms="1108" started-at="2020-11-24T19:20:11Z" finished-at="2020-11-24T19:20:12Z">
+        </test-method> <!-- verifySingleDemoCheckbox -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.CheckBoxDemoSingleCheckBoxTest2@7c29daf3]" name="tearDown" is-config="true" duration-ms="1888" started-at="2020-11-25T13:39:55Z" finished-at="2020-11-25T13:39:57Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyDragAndDrop status=SUCCESS method=DragAndDropTest.verifyDragAndDrop()[pri:0, instance:testCases.DragAndDropTest@32709393] output={null}]]]>
+                <![CDATA[[TestResult name=verifySingleDemoCheckbox status=SUCCESS method=CheckBoxDemoSingleCheckBoxTest2.verifySingleDemoCheckbox()[pri:0, instance:testCases.CheckBoxDemoSingleCheckBoxTest2@7c29daf3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.DragAndDropTest -->
+      </class> <!-- testCases.CheckBoxDemoSingleCheckBoxTest2 -->
+      <class name="testCases.FirstFormDemoUsingLaunchBrowsrStaticDataTest">
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testCases.FirstFormDemoUsingLaunchBrowsrStaticDataTest@a7e666]" name="initiateBrowser" is-config="true" duration-ms="15383" started-at="2020-11-25T13:39:08Z" finished-at="2020-11-25T13:39:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyTwoInputFields()[pri:0, instance:testCases.FirstFormDemoUsingLaunchBrowsrStaticDataTest@a7e666]" name="verifyTwoInputFields" duration-ms="8373" started-at="2020-11-25T13:39:23Z" finished-at="2020-11-25T13:39:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTwoInputFields -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.FirstFormDemoUsingLaunchBrowsrStaticDataTest@a7e666]" name="tearDown" is-config="true" duration-ms="2848" started-at="2020-11-25T13:39:31Z" finished-at="2020-11-25T13:39:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTwoInputFields status=SUCCESS method=FirstFormDemoUsingLaunchBrowsrStaticDataTest.verifyTwoInputFields()[pri:0, instance:testCases.FirstFormDemoUsingLaunchBrowsrStaticDataTest@a7e666] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.FirstFormDemoUsingLaunchBrowsrStaticDataTest -->
+      <class name="testCases.FirstFormDemoDataSheet">
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testCases.FirstFormDemoDataSheet@7494e528]" name="initiateBrowser" is-config="true" duration-ms="12476" started-at="2020-11-25T13:39:30Z" finished-at="2020-11-25T13:39:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyTwoInputFieldsNew()[pri:0, instance:testCases.FirstFormDemoDataSheet@7494e528]" name="verifyTwoInputFieldsNew" duration-ms="37541" started-at="2020-11-25T13:39:42Z" finished-at="2020-11-25T13:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTwoInputFieldsNew -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.FirstFormDemoDataSheet@7494e528]" name="tearDown" is-config="true" duration-ms="1072" started-at="2020-11-25T13:40:20Z" finished-at="2020-11-25T13:40:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTwoInputFieldsNew status=SUCCESS method=FirstFormDemoDataSheet.verifyTwoInputFieldsNew()[pri:0, instance:testCases.FirstFormDemoDataSheet@7494e528] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.FirstFormDemoDataSheet -->
+      <class name="testCases.CheckBoxDemoSingleCheckBoxTest">
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testCases.CheckBoxDemoSingleCheckBoxTest@68bbe345]" name="initiateBrowser" is-config="true" duration-ms="11286" started-at="2020-11-25T13:39:08Z" finished-at="2020-11-25T13:39:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifySingleDemoCheckbox()[pri:0, instance:testCases.CheckBoxDemoSingleCheckBoxTest@68bbe345]" name="verifySingleDemoCheckbox" duration-ms="9300" started-at="2020-11-25T13:39:19Z" finished-at="2020-11-25T13:39:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySingleDemoCheckbox -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.CheckBoxDemoSingleCheckBoxTest@68bbe345]" name="tearDown" is-config="true" duration-ms="1415" started-at="2020-11-25T13:39:28Z" finished-at="2020-11-25T13:39:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySingleDemoCheckbox status=SUCCESS method=CheckBoxDemoSingleCheckBoxTest.verifySingleDemoCheckbox()[pri:0, instance:testCases.CheckBoxDemoSingleCheckBoxTest@68bbe345] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.CheckBoxDemoSingleCheckBoxTest -->
+      <class name="testCases.FirstFormDemoTestUsingLaunchBrowser">
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testCases.FirstFormDemoTestUsingLaunchBrowser@4bbfb90a]" name="initiateBrowser" is-config="true" duration-ms="19313" started-at="2020-11-25T13:39:34Z" finished-at="2020-11-25T13:39:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifySingleInputField()[pri:0, instance:testCases.FirstFormDemoTestUsingLaunchBrowser@4bbfb90a]" name="verifySingleInputField" duration-ms="7051" started-at="2020-11-25T13:39:54Z" finished-at="2020-11-25T13:40:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySingleInputField -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.FirstFormDemoTestUsingLaunchBrowser@4bbfb90a]" name="tearDown" is-config="true" duration-ms="1650" started-at="2020-11-25T13:40:01Z" finished-at="2020-11-25T13:40:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySingleInputField status=SUCCESS method=FirstFormDemoTestUsingLaunchBrowser.verifySingleInputField()[pri:0, instance:testCases.FirstFormDemoTestUsingLaunchBrowser@4bbfb90a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.FirstFormDemoTestUsingLaunchBrowser -->
+      <class name="testCases.FirstFormDemoClunkyTest">
+        <test-method status="PASS" signature="verifySingleInputField()[pri:0, instance:testCases.FirstFormDemoClunkyTest@30b8a058]" name="verifySingleInputField" duration-ms="29778" started-at="2020-11-25T13:39:08Z" finished-at="2020-11-25T13:39:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySingleInputField -->
+      </class> <!-- testCases.FirstFormDemoClunkyTest -->
+      <class name="testCases.FirstRadioButtonDemoSingleRadioButtonTest">
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testCases.FirstRadioButtonDemoSingleRadioButtonTest@9660f4e]" name="initiateBrowser" is-config="true" duration-ms="9622" started-at="2020-11-25T13:39:57Z" finished-at="2020-11-25T13:40:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifySingleRadioButton()[pri:0, instance:testCases.FirstRadioButtonDemoSingleRadioButtonTest@9660f4e]" name="verifySingleRadioButton" duration-ms="3516" started-at="2020-11-25T13:40:07Z" finished-at="2020-11-25T13:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySingleRadioButton -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.FirstRadioButtonDemoSingleRadioButtonTest@9660f4e]" name="tearDown" is-config="true" duration-ms="1384" started-at="2020-11-25T13:40:10Z" finished-at="2020-11-25T13:40:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySingleRadioButton status=SUCCESS method=FirstRadioButtonDemoSingleRadioButtonTest.verifySingleRadioButton()[pri:0, instance:testCases.FirstRadioButtonDemoSingleRadioButtonTest@9660f4e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.FirstRadioButtonDemoSingleRadioButtonTest -->
     </test> <!-- SeleniumEasyTest -->
   </suite> <!-- SeleniumEasySuite -->
 </testng-results>
