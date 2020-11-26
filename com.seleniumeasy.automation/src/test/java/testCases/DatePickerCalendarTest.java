@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import pageObjects.DatePickerPage;
 import utilties.CommonMethod;
+import utilties.Constant;
 
 public class DatePickerCalendarTest extends CommonMethod {
 
@@ -15,7 +16,7 @@ public class DatePickerCalendarTest extends CommonMethod {
 		
 		DatePickerPage DPCPage = new DatePickerPage(driver);
 		
-		driver.get("https://www.seleniumeasy.com/test/bootstrap-date-picker-demo.html");
+		driver.get(Constant.dataPickerPageURL);
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		
 		DPCPage.setCalendarDate();

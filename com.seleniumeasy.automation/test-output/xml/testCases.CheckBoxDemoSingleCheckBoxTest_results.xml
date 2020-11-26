@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SeleniumEasyTest"
+<testsuite name="Test"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="9.300">
+           time="3.296">
   <properties />
   
   
-            <testcase name="verifySingleDemoCheckbox" time="9.300" classname="testCases.CheckBoxDemoSingleCheckBoxTest" />
+            <testcase name="verifySingleDemoCheckbox" time="3.296" classname="testCases.CheckBoxDemoSingleCheckBoxTest" />
       
 </testsuite>

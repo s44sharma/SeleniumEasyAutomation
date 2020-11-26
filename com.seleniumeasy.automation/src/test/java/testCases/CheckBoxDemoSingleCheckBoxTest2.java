@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import pageObjects.CheckBoxDemoPage;
 import utilties.CommonMethod;
+import utilties.Constant;
 
 public class CheckBoxDemoSingleCheckBoxTest2 extends CommonMethod {
 
@@ -15,7 +16,7 @@ public class CheckBoxDemoSingleCheckBoxTest2 extends CommonMethod {
 		
 		CheckBoxDemoPage BCBDPage = new CheckBoxDemoPage(driver);
 		
-		driver.get("https://www.seleniumeasy.com/test/basic-checkbox-demo.html");
+		driver.get(Constant.checkBoxPageURL);
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		
 		BCBDPage.setSingleDemoCheckbox();

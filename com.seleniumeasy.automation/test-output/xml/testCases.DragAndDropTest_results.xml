@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SeleniumEasyTest"
+<testsuite name="Test"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="12.209">
+           time="9.652">
   <properties />
   
   
-            <testcase name="verifyDragAndDrop" time="12.209" classname="testCases.DragAndDropTest" />
+            <testcase name="verifyDragAndDrop" time="9.652" classname="testCases.DragAndDropTest" />
       
 </testsuite>

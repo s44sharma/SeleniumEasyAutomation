@@ -11,6 +11,7 @@ import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
 import pageObjects.FirstFormDemoPage;
+import utilties.Constant;
 import utilties.HeadlessCommonMethod;
 
 public class HeadlessFirstFormDemoDataSheetTest extends HeadlessCommonMethod{
@@ -21,7 +22,7 @@ public class HeadlessFirstFormDemoDataSheetTest extends HeadlessCommonMethod{
 		
 	FirstFormDemoPage BFFDPage = new FirstFormDemoPage(driver);
 	
-	driver.get("https://www.seleniumeasy.com/test/basic-first-form-demo.html");
+	driver.get(Constant.basicFirstFormPageURL);
 	driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 	
 	Workbook wbk = Workbook.getWorkbook(new File("./src/test/resources/TestData/Numbers.xls"));

@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import pageObjects.FirstFormDemoPage;
 import utilties.CommonMethod;
+import utilties.Constant;
 
 public class FirstFormDemoUsingLaunchBrowsrStaticDataTest extends CommonMethod{
 	
@@ -15,7 +16,7 @@ public class FirstFormDemoUsingLaunchBrowsrStaticDataTest extends CommonMethod{
 	// This will call BasicFirstFormDemoPage Constructor and pass driver to BasicFirstFormDemoPage
 	FirstFormDemoPage BFFDPage = new FirstFormDemoPage(driver);
 	
-	driver.get("https://www.seleniumeasy.com/test/basic-first-form-demo.html");
+	driver.get(Constant.basicFirstFormPageURL);
 	driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 	
 	int firstNumber = 5;

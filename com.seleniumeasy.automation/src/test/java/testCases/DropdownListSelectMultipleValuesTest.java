@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import pageObjects.DropdownListPage;
 import utilties.CommonMethod;
+import utilties.Constant;
 
 public class DropdownListSelectMultipleValuesTest extends CommonMethod {
 
@@ -15,7 +16,7 @@ public class DropdownListSelectMultipleValuesTest extends CommonMethod {
 		
 		DropdownListPage DDLPage2 = new DropdownListPage(driver);
 		
-		driver.get("https://www.seleniumeasy.com/test/basic-select-dropdown-demo.html");
+		driver.get(Constant.dropDownPageURL);
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		
 		DDLPage2.selectMultipleListItems();

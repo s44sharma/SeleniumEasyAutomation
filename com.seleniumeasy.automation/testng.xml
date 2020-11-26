@@ -23,10 +23,10 @@
       <class name="testCases.DropdownListPrintAllValuesTest"/>
       <class name="testCases.FirstFormDemoDataSheet"/>
       <class name="testCases.FirstFormDemoTestUsingLaunchBrowser"/>
+      <class name="testCases.HeadlessFirstFormDemoDataSheetTest"/>
       <class name="testCases.FirstFormDemoUsingLaunchBrowsrStaticDataTest"/>
-      <class name="testCases.DragAndDropTest"/>
+      <class name="testCases.NaukriHandleMultipleWindowsTest"/>
       <class name="testCases.DropdownListTest"/>
-      <class name="testCases.FirstFormDemoClunkyTest"/>
       <class name="testCases.PopupWindowTest"/>
       <class name="testCases.CheckBoxDemoSingleCheckBoxTest2"/>
     </classes>

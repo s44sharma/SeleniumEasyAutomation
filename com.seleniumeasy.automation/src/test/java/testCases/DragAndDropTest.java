@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 import org.testng.annotations.Test;
 import pageObjects.DragAndDropPage;
 import utilties.CommonMethod;
+import utilties.Constant;
 
 public class DragAndDropTest extends CommonMethod {
 
@@ -13,7 +14,8 @@ public class DragAndDropTest extends CommonMethod {
 		
 		DragAndDropPage DADPage = new DragAndDropPage(driver);
 		
-		driver.get("https://www.seleniumeasy.com/test/drag-and-drop-demo.html");
+		driver.get(Constant.dragDropPageURL);
+		
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		
 		DADPage.verifyDragDropBox();

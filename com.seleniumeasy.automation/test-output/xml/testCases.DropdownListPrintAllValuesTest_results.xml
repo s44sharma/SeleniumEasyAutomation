@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="3.747">
+           time="5.660">
   <properties />
   
   
-            <testcase name="verifyDropdownListValues" time="3.747" classname="testCases.DropdownListPrintAllValuesTest" />
+            <testcase name="verifyDropdownListValues" time="5.660" classname="testCases.DropdownListPrintAllValuesTest" />
       
 </testsuite>

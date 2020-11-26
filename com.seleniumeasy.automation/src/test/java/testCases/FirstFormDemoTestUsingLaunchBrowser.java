@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import pageObjects.FirstFormDemoPage;
 import utilties.CommonMethod;
+import utilties.Constant;
 
 public class FirstFormDemoTestUsingLaunchBrowser extends CommonMethod{
 	
@@ -18,7 +19,7 @@ public class FirstFormDemoTestUsingLaunchBrowser extends CommonMethod{
 	// This will call BasicFirstFormDemoPage Constructor and pass driver to BasicFirstFormDemoPage
 	FirstFormDemoPage BFFDPage = new FirstFormDemoPage(driver);
 	
-	driver.get("https://www.seleniumeasy.com/test/basic-first-form-demo.html");
+	driver.get(Constant.basicFirstFormPageURL);
 	driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		
 	BFFDPage.setUserMessage("Raman's Test Message");

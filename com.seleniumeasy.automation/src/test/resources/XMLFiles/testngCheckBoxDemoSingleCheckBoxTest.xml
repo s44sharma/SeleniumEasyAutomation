@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="SeleniumEasySuite" thread-count="3" parallel="methods">
+<suite name="SeleniumEasySuite">
 	<groups>
 		<run>
 			<include name="Smoke"></include>
@@ -16,14 +16,8 @@
 
 	<test name="SeleniumEasyTest">
 		<parameter name="Browser" value="chrome" />
-		
 		<classes>
-			<class name="testCases.FirstFormDemoUsingLaunchBrowsrStaticDataTest" />
 			<class name="testCases.CheckBoxDemoSingleCheckBoxTest" />
-			<class name="testCases.FirstFormDemoDataSheet" />
-			<class name="testCases.FirstFormDemoTestUsingLaunchBrowser" />
-			<class name="testCases.CheckBoxDemoSingleCheckBoxTest2" />
-			<class name="testCases.FirstRadioButtonDemoSingleRadioButtonTest" />
 		</classes>
 	</test> <!-- SeleniumEasyTest -->
 </suite> <!-- SeleniumEasySuite -->

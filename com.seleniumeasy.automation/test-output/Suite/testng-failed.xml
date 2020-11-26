@@ -1,16 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
   <test name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
+    <parameter name="Browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Smoke"/>
+        <include name="Regression"/>
+        <include name="Functional"/>
+      </run>
+    </groups>
     <classes>
-      <class name="testCases.BasicFirstFormDemoTestUsingLaunchBrowser">
+      <class name="testCases.CheckBoxDemoSingleCheckBoxTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifySingleDemoCheckbox"/>
+          <include name="initiateBrowser"/>
+        </methods>
+      </class> <!-- testCases.CheckBoxDemoSingleCheckBoxTest -->
+      <class name="testCases.DropdownListTest">
+        <methods>
+          <include name="verifyDropdownList"/>
+          <include name="tearDown"/>
+          <include name="initiateBrowser"/>
+        </methods>
+      </class> <!-- testCases.DropdownListTest -->
+      <class name="testCases.DropdownListPrintAllValuesTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyDropdownListValues"/>
+          <include name="initiateBrowser"/>
+        </methods>
+      </class> <!-- testCases.DropdownListPrintAllValuesTest -->
+      <class name="testCases.CheckBoxDemoSingleCheckBoxTest2">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifySingleDemoCheckbox"/>
+          <include name="initiateBrowser"/>
+        </methods>
+      </class> <!-- testCases.CheckBoxDemoSingleCheckBoxTest2 -->
+      <class name="testCases.FirstFormDemoDataSheet">
+        <methods>
+          <include name="verifyTwoInputFieldsNew"/>
+          <include name="tearDown"/>
+          <include name="initiateBrowser"/>
+        </methods>
+      </class> <!-- testCases.FirstFormDemoDataSheet -->
+      <class name="testCases.FirstFormDemoUsingLaunchBrowsrStaticDataTest">
+        <methods>
+          <include name="verifyTwoInputFields"/>
+          <include name="tearDown"/>
+          <include name="initiateBrowser"/>
+        </methods>
+      </class> <!-- testCases.FirstFormDemoUsingLaunchBrowsrStaticDataTest -->
+      <class name="testCases.PopupWindowTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initiateBrowser"/>
+          <include name="verifyPopupWindow"/>
+        </methods>
+      </class> <!-- testCases.PopupWindowTest -->
+      <class name="testCases.FirstFormDemoTestUsingLaunchBrowser">
         <methods>
           <include name="verifySingleInputField"/>
           <include name="tearDown"/>
           <include name="initiateBrowser"/>
         </methods>
-      </class> <!-- testCases.BasicFirstFormDemoTestUsingLaunchBrowser -->
+      </class> <!-- testCases.FirstFormDemoTestUsingLaunchBrowser -->
+      <class name="testCases.FirstRadioButtonDemoSingleRadioButtonTest">
+        <methods>
+          <include name="verifySingleRadioButton"/>
+          <include name="tearDown"/>
+          <include name="initiateBrowser"/>
+        </methods>
+      </class> <!-- testCases.FirstRadioButtonDemoSingleRadioButtonTest -->
+      <class name="testCases.NaukriHandleMultipleWindowsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="handleMultipleWindows"/>
+          <include name="initiateBrowser"/>
+        </methods>
+      </class> <!-- testCases.NaukriHandleMultipleWindowsTest -->
+      <class name="testCases.DatePickerCalendarTest">
+        <methods>
+          <include name="verifyDatePickerCalendar"/>
+          <include name="tearDown"/>
+          <include name="initiateBrowser"/>
+        </methods>
+      </class> <!-- testCases.DatePickerCalendarTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

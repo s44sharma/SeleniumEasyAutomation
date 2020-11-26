@@ -4,9 +4,9 @@ import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.Test;
 
-import pageObjects.CheckBoxDemoPage;
 import pageObjects.FirstRadioButtonDemoPage;
 import utilties.CommonMethod;
+import utilties.Constant;
 
 public class FirstRadioButtonDemoSingleRadioButtonTest extends CommonMethod {
 
@@ -16,7 +16,7 @@ public class FirstRadioButtonDemoSingleRadioButtonTest extends CommonMethod {
 		
 		FirstRadioButtonDemoPage BFRBDPage = new FirstRadioButtonDemoPage(driver);
 		
-		driver.get("https://www.seleniumeasy.com/test/basic-radiobutton-demo.html");
+		driver.get(Constant.radioButtonPageURL);
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		
 		BFRBDPage.setSingleRadioMale();

@@ -14,6 +14,7 @@ public class CommonMethod {
 @BeforeMethod(alwaysRun = true)
 @Parameters ("Browser")
 
+
 // Initiate Browser
 	public void initiateBrowser(String browser) {
 	if (browser.equals("chrome"))

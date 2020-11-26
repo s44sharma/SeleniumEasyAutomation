@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import pageObjects.CheckBoxDemoPage;
 import pageObjects.NaukriMainPage;
 import utilties.CommonMethod;
+import utilties.Constant;
 
 public class NaukriHandleMultipleWindowsTest extends CommonMethod {
 
@@ -16,7 +17,7 @@ public class NaukriHandleMultipleWindowsTest extends CommonMethod {
 		
 		NaukriMainPage NMPage = new NaukriMainPage(driver);
 		
-		driver.get("https://www.naukri.com/");
+		driver.get(Constant.naukriURL);
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		
 		NMPage.handleMultipleWindows();
