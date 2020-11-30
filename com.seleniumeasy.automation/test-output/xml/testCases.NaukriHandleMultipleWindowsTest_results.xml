@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="15.311">
+           time="56.430">
   <properties />
   
   
-            <testcase name="handleMultipleWindows" time="15.311" classname="testCases.NaukriHandleMultipleWindowsTest" />
+            <testcase name="handleMultipleWindows" time="56.430" classname="testCases.NaukriHandleMultipleWindowsTest" />
       
 </testsuite>

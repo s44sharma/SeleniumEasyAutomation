@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="4.258">
+           time="25.553">
   <properties />
   
   
-            <testcase name="verifyDropdownListValues" time="4.258" classname="testCases.DropdownListPrintAllValuesTest" />
+            <testcase name="verifyTwoInputFieldsNew" time="25.553" classname="testCases.FirstFormDemoDataSheetTest" />
       
 </testsuite>

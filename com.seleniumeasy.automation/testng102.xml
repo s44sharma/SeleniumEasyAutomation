@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	<groups>
 		<run>
@@ -13,20 +13,23 @@
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 	</listeners>
-  <test name="Test">
-  		<parameter name="Browser" value="chrome" />
+
+	<test name="SeleniumEasyTest">
+		<parameter name="Browser" value="chrome" />
+
     <classes>
       <class name="testCases.DropdownListSelectMultipleValuesTest"/>
       <class name="testCases.CheckBoxDemoSingleCheckBoxTest"/>
       <class name="testCases.FirstRadioButtonDemoSingleRadioButtonTest"/>
       <class name="testCases.DatePickerCalendarTest"/>
       <class name="testCases.DropdownListPrintAllValuesTest"/>
-      <class name="testCases.FirstFormDemoDataSheet"/>
+      <class name="testCases.FirstFormDemoDataSheetTest"/>
       <class name="testCases.FirstFormDemoTestUsingLaunchBrowser"/>
       <class name="testCases.HeadlessFirstFormDemoDataSheetTest"/>
       <class name="testCases.FirstFormDemoUsingLaunchBrowsrStaticDataTest"/>
       <class name="testCases.NaukriHandleMultipleWindowsTest"/>
       <class name="testCases.DropdownListTest"/>
+      <class name="testCases.FirstFormDemoClunkyTest"/>
       <class name="testCases.PopupWindowTest"/>
       <class name="testCases.CheckBoxDemoSingleCheckBoxTest2"/>
     </classes>

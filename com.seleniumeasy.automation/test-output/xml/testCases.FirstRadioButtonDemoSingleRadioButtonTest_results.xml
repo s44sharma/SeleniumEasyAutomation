@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="2.884">
+           time="4.816">
   <properties />
   
   
-            <testcase name="verifySingleRadioButton" time="2.884" classname="testCases.FirstRadioButtonDemoSingleRadioButtonTest" />
+            <testcase name="verifySingleRadioButton" time="4.816" classname="testCases.FirstRadioButtonDemoSingleRadioButtonTest" />
       
 </testsuite>

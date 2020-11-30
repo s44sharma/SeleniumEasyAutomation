@@ -14,7 +14,7 @@ import pageObjects.FirstFormDemoPage;
 import utilties.CommonMethod;
 import utilties.Constant;
 
-public class FirstFormDemoDataSheet extends CommonMethod{
+public class FirstFormDemoDataSheetTest extends CommonMethod{
 	
 	@Test (groups="Regression")
 	
@@ -26,7 +26,7 @@ public class FirstFormDemoDataSheet extends CommonMethod{
 	
 	driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 	
-	Workbook wbk = Workbook.getWorkbook(new File("./src/test/resources/TestData/Numbers.xls"));
+	Workbook wbk = Workbook.getWorkbook(new File(Constant.testDataWorkbook));
 	// import file java.io
 
 	Sheet sh = wbk.getSheet("Sheet1");

@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="8.805">
+           time="19.145">
   <properties />
   
   
-            <testcase name="verifyPopupWindow" time="8.805" classname="testCases.PopupWindowTest" />
+            <testcase name="verifyPopupWindow" time="19.145" classname="testCases.PopupWindowTest" />
       
 </testsuite>

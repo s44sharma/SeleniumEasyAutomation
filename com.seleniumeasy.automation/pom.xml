@@ -28,18 +28,48 @@
 		</dependency>
 
 		<dependency>
-    <groupId>org.apache.directory.studio</groupId>
-    <artifactId>org.apache.commons.io</artifactId>
-    <version>2.4</version>
-</dependency>
+			<groupId>org.apache.directory.studio</groupId>
+			<artifactId>org.apache.commons.io</artifactId>
+			<version>2.4</version>
+		</dependency>
 
-<dependency>
-    <groupId>org.uncommons</groupId>
-    <artifactId>reportng</artifactId>
-    <version>1.1.4</version>
-    <scope>test</scope>
-</dependency>
+		<dependency>
+			<groupId>org.uncommons</groupId>
+			<artifactId>reportng</artifactId>
+			<version>1.1.4</version>
+			<scope>test</scope>
+		</dependency>
 
+		<!-- All Below are Added for Jenkins -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
+	<build>
+		<!-- To use the plugin goals in your POM or parent POM -->
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M5</version>
+				<inherited></inherited>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>testng101.xml</suiteXmlFile>
+						<suiteXmlFile>testng102.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>

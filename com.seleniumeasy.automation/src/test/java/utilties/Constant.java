@@ -9,9 +9,10 @@ public class Constant {
 	public static final String basicFirstFormPageURL = "https://www.seleniumeasy.com/test/basic-first-form-demo.html";
 	public static final String radioButtonPageURL = "https://www.seleniumeasy.com/test/basic-radiobutton-demo.html";
 	public static final String windowPopupPageURL = "https://www.seleniumeasy.com/test/window-popup-modal-demo.html";
-
 	
 	public static final String naukriURL = "https://www.naukri.com/";
+	
+	public static final String testDataWorkbook = "./src/test/resources/TestData/Numbers.xls";
 
 
 

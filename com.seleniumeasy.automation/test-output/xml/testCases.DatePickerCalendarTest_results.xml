@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="2.937">
+           time="3.981">
   <properties />
   
   
-            <testcase name="verifyDatePickerCalendar" time="2.937" classname="testCases.DatePickerCalendarTest" />
+            <testcase name="verifyDatePickerCalendar" time="3.981" classname="testCases.DatePickerCalendarTest" />
       
 </testsuite>

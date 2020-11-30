@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="SeleniumEasySuite">
+<suite name="Suite">
 	<groups>
 		<run>
 			<include name="Smoke"></include>
@@ -16,8 +16,11 @@
 
 	<test name="SeleniumEasyTest">
 		<parameter name="Browser" value="chrome" />
-		<classes>
-			<class name="testCases.PopupWindowTest" />
-		</classes>
-	</test> <!-- SeleniumEasyTest -->
-</suite> <!-- SeleniumEasySuite -->
+
+    <classes>
+ 
+      <class name="testCases.CheckBoxDemoSingleCheckBoxTest"/>
+
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
